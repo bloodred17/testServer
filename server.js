@@ -1,7 +1,11 @@
 const express = require ('express');
 var app = express();
 app.get('/', (req, res) => {
-    res.send('<h1>Hello Anany!</h1>');
+    res.send('Hello Node!');
 });
 
-app.listen(3000, '192.168.1.25');
+app.get('/on', (req, res) => {
+    res.send('1');
+});
+
+app.listen(3000, 'localhost');
