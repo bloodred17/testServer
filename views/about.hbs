@@ -7,11 +7,12 @@
     <title>About</title>
 </head>
 <body>
-    <h1>{{pageTitle}}</h1>
+    {{!-- Injecting template: header --}}
+    {{> header}}
+    
     <p>Some text</p>
 
-    <footer>
-        <p>&copy; {{currentYear}}</p>
-    </footer>
+    {{!-- Injecting template: footer --}}
+    {{> footer}}
 </body>
 </html>
